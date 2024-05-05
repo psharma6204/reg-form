@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    animation: changeBackground 20s infinite alternate; /* Animation for dynamic background */
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center;
+    background-color: rgba(155, 109, 109, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.logo {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px; /* Add top margin for spacing */
+    border-radius: 50%; /* Make the logo circular */
+}
+
+
+h1 {
+    color: #333;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.registration-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.registration-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* CSS animation for dynamic background */
+@keyframes changeBackground {
+    0% { background-image: url('pic1.jpg'); }
+    50% { background-image: url('pic4.jpg'); }
+    100% { background-image: url('pic3.jpg'); }
+}
